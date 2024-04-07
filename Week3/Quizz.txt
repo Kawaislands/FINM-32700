@@ -1,0 +1,70 @@
+Session 3: operator addition
+You are going to add the operator addition to add 2 orders:
+	•	you will have the quantity
+Then you are going to impleent the increment ++
+	•	you will add +1 to the quantity
+You are going to add the operator addition to add 2 orders:
+	•	you will have the quantity
+Then you are going to impleent the increment ++
+	•	you will add +1 to the quantity
+ 
+#include <iostream>
+
+#include <stdint.h>
+#include <iostream>
+
+class Trader{
+public:
+    std::string name;
+    Trader(std::string name_):name(name_){}
+};
+
+class Order{
+
+public:
+    Trader * trader;
+    int quantity;
+    Order(Trader *trader_, int quantity_):trader(trader_),quantity(quantity_){}
+    Order(const Order &o){
+        trader = new Trader(*(o.trader));
+    }
+    Order& operator=(const Order &o){
+        trader = o.trader;
+        return *this; // why we need this line?
+    }
+};
+
+int main() {
+    Trader t1("seb");
+    Order o1(&t1,100);
+    Order o2(o1);
+    Order o3=o1; // <==> Order o3(o1);
+    o3 = o1 = o2; // <==> o3.operator=(o1.operator=(o2));
+    o2.trader->name="nic";
+    printf("address of the trader:%p\n", o1.trader);
+    printf("address of the trader:%p\n", o2.trader);
+    std::cout  << "name of o1 trader:" << o1.trader->name << std::endl;
+    std::cout  << "name of o2 trader:" << o2.trader->name << std::endl;
+
+    return 0;
+}
+
+
+
+access private variables with cast
+You need to change the value of this class by using cast:
+class PrivateOrder{
+private:
+    int a;
+    int b;
+public:
+    PrivateOrder(int a_, int b_):a(a_),b(b_){};
+};
+
+
+int main() {
+    PrivateOrder po1(1,2);
+    po1.a;
+    po1.b;
+    return 0;
+}

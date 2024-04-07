@@ -1,0 +1,40 @@
+Session 2 summary
+AI Generated.
+Meeting Summary for Advanced computing
+Mar 29, 2024 05:59 PM Central Time (US and Canada) ID: 936 7806 7121
+Quick recap
+Sebastien discussed attendance policies, assigning a quiz on the previous week's content and delegating homework and project tasks to Hunter. He explained the advantages of C for high-frequency trading, matrices using 2D arrays, and pointers and memory management in C. Sebastien also covered object-oriented programming concepts in C++, including constructors, copy constructors, inheritance, and virtual functions.
+ 
+Summary
+Attendance Policies and Project Focus
+Sebastien discussed attendance policies for the class, opting to implement a quiz related to the previous week's content as a participation requirement. He clarified that the quiz, valid until 11.59pm, would not impact students' grades and that quiz solutions would be provided. Sebastien also outlined that the week's focus would be on 'pointers and metrics' for the project. He assigned Hunter with posting the homework and the class project for the next week, emphasizing that it should not be time-consuming. Finally, Sebastien directed students to the 'session one knowledge check' quiz for the week one review.
+
+C Language for High-Frequency Trading
+Sebastien discussed the advantages of using the C language for high-frequency trading, including its speed, efficient memory management, and lack of a garbage collector. He explained the differences between compiled and interpreted languages, the importance of choosing the correct data types, and the need for careful memory management to prevent memory leaks and undefined behavior. Sebastien also clarified the differences between stack and heap arrays, the concept of pointers, and the differences between pointers and references. He hinted at using this knowledge for a future project and briefly touched on the topic of passing pointer arguments to functions.
+
+Matrix Representation and Allocation in Python
+Sebastien clarified the use of certain expressions and moved on to discuss a project that would provide more content for interviews. He then delved into the concept of a matrix using a 2D array as an example. Sebastien explained how matrices are represented in Python, including the allocation of memory and the most efficient way to allocate a two-dimensional array. He also encouraged the team to think about how to initialize the allocated memory and expressed interest in their approach to the task.
+
+Common Pointer Issues in C Programming
+Sebastien identified and explained a common issue with pointers in C programming. He demonstrated how a double pointer can cause a segmentation fault if not initialized correctly, especially when dereferencing the pointer. Sebastien pointed out that the problem arises when the size of the array is not specified, as the system cannot determine the correct jump size. He suggested looking at other implementations to understand how to resolve this issue. He also mentioned that the code he was discussing had been corrected to prevent the previously observed problem.
+
+Matrix Allocation and Multiplication Optimization
+Sebastien presented a code for matrix allocation and sought feedback from the team on its performance and potential issues. The team confirmed that the code worked but raised a concern about memory leaks. Sebastien proposed a solution to manage memory allocation, emphasizing the potential performance issues and the need to access data efficiently. The team seemed to agree with Sebastien's approach despite the potential complexities. Sebastien then led a discussion on optimizing matrix multiplication performance using pointers and arrays. He demonstrated allocating memory for a one-dimensional array to represent a matrix and suggested the possibility of three-dimensional arrays. Sebastien also discussed initializing the matrix array within a function, modifying the argument types as pointers or references to enable memory allocation and matrix operations outside the main function.
+
+Modifying Viable Content and OP Python
+Sebastien discussed the process of modifying the content of a 'viable' in the context of a project. He emphasized that using a pointer to the address of an array is equivalent to changing the content directly, and demonstrated this by showing the same result when changing either a pointer or a viable. Sebastien then introduced a brief break before planning to delve into the topic of 'OP' in Python, encouraging attendees to ask questions if they need clarification.
+
+C and Python Class Declaration Differences
+Sebastien explained the differences between declaring a class in C and Python. He clarified that in C, class attributes are defined outside the constructor's scope, and the attributes can be private, public, or protected. He emphasized that private attributes can only be accessed within the scope of the class. Sebastien also highlighted that struct and class are essentially the same in C, with the only difference being that struct members are publicly accessible by default, whereas class members are privately accessible by default. Finally, he demonstrated how to create an instance of a class on the stack and on the heap.
+
+C++ Memory Allocation and Object Creation
+Sebastien explained the concepts of memory allocation and object creation in C++. He clarified that the location in memory doesn't matter for the functionality, but for the memory aspect of the object. He demonstrated how to create a constructor and a destructor, emphasizing the importance of the constructor being declared public for object creation. Sebastien also explained the difference between the assignment operator and the move operator for object memory management. He noted that C++ provides many default functions, including the copy constructor and destructor.
+
+Copy Constructor Implementation and Modification
+Sebastien discussed the implementation of the copy constructor in a class. He explained that the copy constructor is called when an object is created and its value is initialized as a copy of another object. Sebastien demonstrated how to modify the copy constructor and emphasized that the default implementation is available even if it's not explicitly defined. He also mentioned the concept of shallow copy and hinted at a future discussion about it.
+
+Object-Oriented Programming in C++
+Sebastien discussed the intricacies of object-oriented programming in C++. He explained the difference between a shallow copy and a deep copy when creating an order with a trader, emphasizing the need to specify the copy constructor for different behaviors. Sebastien further elaborated on the concept of 'friend' classes, which allows access to private variables of another class without directly accessing the private variables. Lastly, he clarified the impact of inheritance on the visibility of base class members, stating that private members remain private, while protected and public members retain their original visibility in the derived class.
+
+Inheritance Implementation and Financial Product Class
+Sebastien discussed the implementation of inheritance in the context of creating a new class, 'Fokk order', from an existing one, 'order'. He emphasized the importance of specifying attributes and using the constructor to initialize them. Sebastien also pointed out an issue with the implementation of a financial product class, which required the creation of arguments to access and initialize certain attributes, such as the term date. Finally, he indicated that the next topic for discussion would be virtual functions, polymorphism, and abstract classes.

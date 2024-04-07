@@ -1,0 +1,50 @@
+Session 3 summary
+AI GENERATED
+ 
+ 
+Meeting summary for Advanced computing (04/05/2024)
+
+Quick recap
+
+Sebastien discussed the implementation of copy constructors and various operators in C++, and the importance of understanding polymorphism, virtual functions, and lookup tables. He also demonstrated the creation of a new class and the conversion of a base class into a derived class, while discussing the potential risks associated with static casting. Lastly, he touched on data alignment, the use of preprocessors, and the specification of data types, and assigned tasks related to the implementation of a vector.
+
+Next steps
+
+• Participants will implement their own vector class using the STL template as a guide, ensuring it can handle various data types and efficiently manage memory.
+• Participants will review and analyze Lexington's solution for the vector class, focusing on the pushback and resize functions, to better understand the principles and practices of C++ code optimization.
+• Participants will practice using ChatGPT for specific questions and scope, but avoid overusing it during the exam to ensure timely responses.
+
+
+Summary
+
+Copy Constructors and Object Creation in C++
+Sebastien explained the concept and usage of copy constructors in C++ programming. He demonstrated how to define a class, in this case, a 'Trader', and how to create objects of that class. He further explained the difference between shallow and deep copying, the former being a simpler process that copies values, while the latter creates a new object with its own memory, ensuring the copied object's independence. Sebastien also highlighted that the default assignment operator is used for shallow copying.
+
+Python Operator Implementation and Integrity
+Sebastien led a discussion about the implementation of operators in Python, focusing on the assignment operator and the addition operator. He explained the concept of operator equivalence and the importance of return values. Sebastien also highlighted the issue of modifying variables, emphasizing that certain variables should not be altered to maintain program integrity. The team was tasked with adding the operators to a provided code and was encouraged to seek help if necessary. Sebastien also successfully posted the code and quiz for the team to access and work on.
+
+Copy Constructor and Function Modifications
+Sebastien proposed the implementation of a copy constructor to create temporary objects, which would preserve the original object's data even after reassignment. The team agreed on its usefulness, especially for function parameters. Sebastien also suggested refinements to a function's implementation, including the addition of a new argument, incrementing a value, and creating a temporary object. The team agreed on these modifications, and Sebastien initiated a discussion about the efficiency of an iterator within a loop, which remained an open question.
+
+Operators, Copy Constructors, and Polymorphism
+Sebastien discussed the implementation process of various operators and the use of copy constructors. He emphasized that the compiler's optimization settings can significantly impact performance, and that the default setting, O2, strikes a good balance between speed and stability. Sebastien also touched on the concept of polymorphism, explaining its application in the context of virtual functions and inheritance. Lastly, he demonstrated the creation of a new class, GtcOrder, that inherits from the Order class and includes a new display function.
+
+C++ Polymorphism, Virtual Functions, and Casting
+Sebastien extensively discussed the concepts of polymorphism, virtual functions, and lookup tables in C++ programming. He used practical examples to illustrate the usage of these features and their impact on performance. He also compared and contrasted C++'s virtual functions, abstract base classes, and pure virtual functions with similar constructs in Java. Lastly, Sebastien elaborated on casting operators, distinguishing between static and dynamic casts, and when to utilize each. He encouraged further questions and discussions throughout his presentation.
+
+Converting Base Classes and Casting
+Sebastien explained the process of converting a base class into a derived class, focusing on the Gtc order. He highlighted the potential risks associated with static casting, which can lead to unpredictable results due to its non-virtual nature. He also clarified the use of the reinterpret cast and dynamic cast in programming, emphasizing that these casts allow for the conversion of any object into any other, with the dynamic cast being slightly slower. Sebastien concluded by presenting an example illustrating the use of the dynamic cast and emphasized that null is equivalent to zero.
+
+Private Order Problem and Casts
+Sebastien assigned a private order problem for the team to solve, focusing on accessing and changing the values of 'A' and 'B' outside the class scope using casts. He emphasized the importance of understanding the scope and how to use casts to manipulate values without creating data issues. After the break, the team reconvened to review the solutions and Sebastien clarified the correct usage and the concept of using private and public for preventing unintended access. He encouraged the team to think about potential errors in software engineering.
+
+Data Alignment and Preprocessor Solutions
+Sebastien discussed data alignment and the use of preprocessors, particularly the 'include' and 'define' functions in creating functions that can handle different data types. He proposed a solution to create a single function with two arguments to handle the addition of two integers and the concatenation of two strings. Sebastien also touched on the use of templates in vector functions, highlighting the impact on compilation and runtime performance. He concluded that while templates may increase compilation time, they lead to improved runtime performance and can be inlined for further optimization.
+
+Data Type Specification and Usage Discussion
+Sebastien discussed the specification of data types in a programming context. He clarified that the 'String' and 'Int' data types do not need to be specified when they are not ambiguous. He also noted that compiling with the 'Float' data type would result in a non-integer output. Sebastien suggested that this could lead to a useful discussion about the use of 'Float'. He then mentioned that the 'St' would provide a data structure and an API to access it.
+
+Vector Implementation and Lexington Solution Analysis
+Sebastien discussed the implementation of a vector, highlighting its unique memory location and type constraint, and assigned the task of creating this vector. He also led an analysis of the Lexington solution, focusing on a template class designed to store different types, and explained the pushback function and the process of doubling the size of the array. Sebastien encouraged the use of St. L. Vector for the time being, addressing some questions about the class and advising the team to use chat GPT for specific questions. Finally, he stated that he could not answer questions about the homework due to time constraints, recommending to ask Hunter instead.
+
+AI-generated content may be inaccurate or misleading. Always check for accuracy.
